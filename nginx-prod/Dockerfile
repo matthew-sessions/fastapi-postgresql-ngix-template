@@ -1,4 +1,4 @@
 FROM nginx:1.19.0-alpine
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
-COPY /ssl/ /etc/nginx/ssl
+COPY ./default.conf /etc/nginx-prod/conf.d/default.conf
+COPY /ssl/ /etc/nginx-prod/ssl
