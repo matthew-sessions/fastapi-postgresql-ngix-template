@@ -23,9 +23,7 @@ services:
         - 5432:5432
 
   nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile-prod
+    build: ./nginx
     ports:
       - "81:81"
     depends_on:

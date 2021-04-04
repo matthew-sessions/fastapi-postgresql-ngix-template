@@ -23,7 +23,9 @@ services:
         - "5432:5432"
 
   nginx:
-    build: ./nginx-prod
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile-prod
     ports:
       - "80:80"
       - "443:443"
